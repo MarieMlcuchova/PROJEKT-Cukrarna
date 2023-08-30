@@ -31,5 +31,121 @@ html { box-sizing: border-box; }
 
 body {
 	margin: 0;
+	color: #242424;
+	font-size: 18px;
+	line-height: 1.5;
+	margin: auto;
+	font-family: 'Lora', serif;
+}
+
+h1, h2, h3 {
+	font-family: 'Playfair Display', serif;
+}
+
+
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+}
+.menu__img {
+	width: 170px;
+}
+
+.menu__item {
+	display: flex;
+	list-style-type: none;
+}
+
+.menu__link {
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 20px;
+}
+
+.menu__link:visited,
+.menu__link:active {
+	color: #242424;
+}
+
+.menu__link:hover {
+	color: white;
+	background-color: #f195b2;
+}
+
+.menu,
+.footer__item {
+	padding: 30px 0;
+}
+
+.aboutus {
+	background-image: url("images/cupcake.jpg");
+	background-size: cover;
+}
+
+.aboutus__title {
+	font-size: 52px;
+	color: #f0f0f0;
+}
+
+.aboutus__text {
+	font-size: 24px;
+	color: #f0f0f0;
+	font-style: italic;
+}
+
+.aboutus,
+.ourbusiness,
+.baking,
+.footer__item,
+.ouroffer,
+.ouroffer__item {
+	width: 1100px;
+	margin: auto;
+	padding: 80px 0;
+}
+
+.ourbusiness,
+.ourbusiness__item--right,
+.ourbusiness__item--left {
+	display: flex;
+}
+
+.ourbusiness__item--left {
+	flex-direction: column;
+}
+
+.ourbusiness {
+	gap: 30px;
+}
+
+.ourbusiness__title {
+	font-size: 36px;
+	color: #3e606b;
+}
+
+.ourbusiness__button {
+	background-color: #f195b2;
+	color: #f0f0f0;
+	text-decoration: none;
+	border-radius: 30px;
+	padding: 15px 40px;
+	width: fit-content;
+}
+
+.ouroffer,
+.product {
+	display: flex;
+	gap: 30px;
+}
+
+.product {
+	flex-direction: column;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+.product__image {
+	width: 100%;
 }
 
