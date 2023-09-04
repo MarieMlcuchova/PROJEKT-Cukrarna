@@ -40,14 +40,15 @@ body {
 
 h1, h2, h3 {
 	font-family: 'Playfair Display', serif;
+	line-height: 1.25;
+	margin: 0px;
 }
-
-
 
 .menu {
 	display: flex;
 	justify-content: space-between;
 }
+
 .menu__img {
 	width: 170px;
 }
@@ -98,8 +99,7 @@ h1, h2, h3 {
 .ourbusiness,
 .baking,
 .footer__item,
-.ouroffer,
-.ouroffer__item {
+.ouroffer {
 	width: 1100px;
 	margin: auto;
 	padding: 80px 0;
@@ -117,9 +117,12 @@ h1, h2, h3 {
 
 .ourbusiness {
 	gap: 30px;
+	align-items: center;
 }
 
-.ourbusiness__title {
+.ourbusiness__title,
+.ouroffer__title,
+.baking__title {
 	font-size: 36px;
 	color: #3e606b;
 }
@@ -133,19 +136,49 @@ h1, h2, h3 {
 	width: fit-content;
 }
 
-.ouroffer,
-.product {
+.ouroffer__products {
 	display: flex;
 	gap: 30px;
 }
 
 .product {
+	display: flex;
 	flex-direction: column;
 	border-radius: 5px;
-	padding: 20px;
 }
 
 .product__image {
 	width: 100%;
+}
+
+.product__title {
+	font-size: 18px;
+	color: #3e606b;
+	text-align: center;
+}
+
+.product__wrapper {
+	padding: 20px;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.ouroffer {
+	background-color: #f0f0f0;
+}
+
+.baking {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
+.baking__item {
+	flex-direction: column;
+}
+
+.baking__image,
+.ourbusiness__image {
+	border-radius: 5px;
 }
 
