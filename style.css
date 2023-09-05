@@ -47,6 +47,8 @@ h1, h2, h3 {
 .menu {
 	display: flex;
 	justify-content: space-between;
+	width: 1100px;
+	margin: auto;
 }
 
 .menu__img {
@@ -82,24 +84,41 @@ h1, h2, h3 {
 .aboutus {
 	background-image: url("images/cupcake.jpg");
 	background-size: cover;
+	background-position: center;
+	padding: 80px 0;
 }
 
 .aboutus__title {
 	font-size: 52px;
 	color: #f0f0f0;
+	width: 60%;
 }
 
 .aboutus__text {
 	font-size: 24px;
 	color: #f0f0f0;
 	font-style: italic;
+	width: 60%;
 }
 
-.aboutus,
-.ourbusiness,
-.baking,
-.footer__item,
+.aboutus__wrapper {
+	width: 1100px;
+	margin: auto;
+}
+
 .ouroffer {
+	background-color: #f0f0f0;
+	padding: 80px 0;
+}
+
+.ouroffer__item,
+.ouroffer__products {
+	width: 1100px;
+	margin: auto;
+}
+
+.ourbusiness,
+.baking {
 	width: 1100px;
 	margin: auto;
 	padding: 80px 0;
@@ -145,6 +164,7 @@ h1, h2, h3 {
 	display: flex;
 	flex-direction: column;
 	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .product__image {
@@ -180,5 +200,14 @@ h1, h2, h3 {
 .baking__image,
 .ourbusiness__image {
 	border-radius: 5px;
+}
+
+.footer__item {
+	background-color: #303339;
+	text-align: center;
+}
+
+.footer__text {
+	color: #f0f0f0;
 }
 
