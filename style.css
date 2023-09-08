@@ -1,33 +1,5 @@
-/* intuitivnější box-sizing pro všechny prvky na stránce */
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
-
-
-/*
-	Poznámky:
-	- maximální šířka obsahu uvnitř sekcí je 1100px
-	- "pruh" s obsahem obsah je vycentrovaný na stránce
-	- všechny sekce mají nahoře a dole padding 80px
-	- kromě hlavičky a patičky, které mají jen 30px
-	- nadpisy jsou fontem Playfair Display, tučně
-	- veškerý další text na stránce fontem Lora
-	- výchozí velikost textu na stránce je 18px, řádkování 1.5
-
-	Velikosti nadpisů:
-	h1 - 52px  (nadpis v horní Hero sekci s cupcakem)
-	h2 - 36px  (nadpisy v dalších sekcích)
-	h3 - 18px  (název produktu v Dnešní nabídce)
-	Nadpisy mají řádkování jen 1.25
-
-	Barvy:
-	#f195b2		růžová - tlačítka a zvýraznění
-	#d2567d		tmavá růžová - hover/aktivní tlačítka
-	#3e606b		tmavá tyrkysová - na nadpisy
-	#242424		(skoro) černá - na běžný text
-	#f0f0f0		světle šedé pozadí prostřední sekce
-	#303339		tmavé pozadí patičky
-*/
-
 
 body {
 	margin: 0;
@@ -40,8 +12,9 @@ body {
 
 h1, h2, h3 {
 	font-family: 'Playfair Display', serif;
+	font-weight: bold;
 	line-height: 1.25;
-	margin: 0px;
+	margin: 0;
 }
 
 .menu {
@@ -58,6 +31,9 @@ h1, h2, h3 {
 .menu__item {
 	display: flex;
 	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	align-items: center;
 }
 
 .menu__link {
@@ -76,11 +52,14 @@ h1, h2, h3 {
 	background-color: #f195b2;
 }
 
-.menu,
+.menu {
+	padding: 30px 10px;
+}
+
 .footer__item {
 	padding: 30px 0;
 }
-
+ 
 .aboutus {
 	background-image: url("images/cupcake.jpg");
 	background-size: cover;
@@ -104,6 +83,7 @@ h1, h2, h3 {
 .aboutus__wrapper {
 	width: 1100px;
 	margin: auto;
+	padding: 0 10px;
 }
 
 .ouroffer {
@@ -121,6 +101,9 @@ h1, h2, h3 {
 .baking {
 	width: 1100px;
 	margin: auto;
+}
+
+.ourbusiness {
 	padding: 80px 0;
 }
 
@@ -132,6 +115,11 @@ h1, h2, h3 {
 
 .ourbusiness__item--left {
 	flex-direction: column;
+	padding-left: 10px;
+}
+
+.ourbusiness__item--right {
+	padding-right: 10px;
 }
 
 .ourbusiness {
@@ -158,6 +146,11 @@ h1, h2, h3 {
 .ouroffer__products {
 	display: flex;
 	gap: 30px;
+	padding: 0 10px;
+}
+
+.ouroffer__item {
+	padding: 0 10px;
 }
 
 .product {
@@ -165,6 +158,7 @@ h1, h2, h3 {
 	flex-direction: column;
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	overflow: hidden;
 }
 
 .product__image {
@@ -191,10 +185,13 @@ h1, h2, h3 {
 	display: flex;
 	gap: 30px;
 	align-items: center;
+	padding: 80px 10px;
 }
 
 .baking__item {
+	display: flex;
 	flex-direction: column;
+	width: 100%;
 }
 
 .baking__image,
@@ -209,5 +206,5 @@ h1, h2, h3 {
 
 .footer__text {
 	color: #f0f0f0;
+	margin: 0;
 }
-
